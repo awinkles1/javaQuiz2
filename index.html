@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="body">
+    <main>
+
+
+        <div id="introduction" class="border">
+            <!--this is the heading and will appear at all times-->
+
+            <h1>JavaScript Quiz</h1>
+
+        </div>
+        <!--end of introduction div-->
+        <br>
+
+        <div id="directions" class="border">
+            <!--the directions will disappear whene the questions pop up-->
+            <div>
+                <p id="introPage"></p>
+            </div>
+            <br>
+            <div>
+                <button id="beginQuiz" class="btn btn-primary">Click to Begin</button>
+            </div>
+        </div>
+
+        <!--end of directions div-->
+
+        <div id="quizPage">
+
+            <br>
+            <div id="quizData">
+                <!--progress data-->
+                <p id="progress" class="border"></p>
+                <!--timer section-->
+                <p id="timer" class=" text-large border"></p>
+            </div>
+            <br>
+
+            <br>
+            <!--these are the buttons that contain possible answers to question-->
+            <div id="posAns" class=" text-left border">
+                <div class="row">
+                    <!--question-->
+                    <h3 id="javaQuestion"></h3>
+                </div>
+
+                <!--this div contains the possible answers-->
+                <div id="radioLabel">
+
+                    <div class="row">
+                        <input type="radio" name="answer" class="javaAnswer" id="oneAns">
+                        <label id="javaAnswer1" for="oneAns"></label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="radio" name="answer" class="javaAnswer" id="twoAns">
+                        <label id="javaAnswer2" for="twoAns"></label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="radio" name="answer" class="javaAnswer" id="threeAns">
+                        <label id="javaAnswer3" for="threeAns"></label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="radio" name="answer" class="javaAnswer" id="fourAns">
+                        <label id="javaAnswer4" for="fourAns"></label>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row" id="button">
+                <!--this div contains the button-->
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                <!-- <button id="next" type="button" class="btn btn-primary">Next</button> -->
+                <br>
+                <br>
+                <div>
+                    <p>***Quiz will move to next question once button is clicked***</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="scorePage">
+            <!--last page with score information-->
+            <div>
+                <h2 id="scoreOutput"></h2>
+            </div>
+            <div id="scoreData" class="border">
+                <div>
+                    <label for="userName">Please enter a username to log your score.</label>
+                    <br>
+                    <input id="userName" type="text" class="text-center" autocomplete="off" placeholder="Required Field">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <button type="submit" id="submitScore" class="btn btn-primary">Save score</button>
+                        <button id="takeAgain" class="btn btn-primary">Take again</button>
+                        <a id="studyMore" class="btn btn-primary" href="https://www.w3schools.com/default.asp">Study
+                            more</a>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <ul id="winner"></ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="assets/javascript/quiz.js"></script>
+
+</html>

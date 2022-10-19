@@ -1,0 +1,110 @@
+#body {
+    background-color: rgb(138, 173, 238);
+}
+main {
+    width: 95%;
+    margin:2% auto;
+    text-align: center; 
+}
+.border {
+    border-style:solid;
+    border-width: 0.5px;
+    border-radius: 10px;
+    padding: 3%;
+    background-color: rgb(51, 132, 207);
+    color:white;
+}
+#introduction {
+    text-decoration: underline;
+    width: 30%;
+    margin: 50px auto;
+}
+#directions {
+    width: 50%;
+    margin:5% auto;
+    font-size: 1.5em;
+}
+#quizData {
+    display:flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#javaQuestion {
+    width: 75%;
+    margin:3% auto;
+    color:white;
+}
+#timer, #progress {
+    width:10%;    
+    padding: 1%;
+    background-color: white;
+    color: black;
+    border-color:rgb(51, 132, 207) ;
+}
+#posAns {
+    width:40%;
+    margin:auto;
+}
+#radioLabel {
+    margin:auto;
+    padding-left:40%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+#winner {
+    margin:auto;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+    padding-left:1%;
+    width: 80%;
+}
+li {
+    margin: auto;
+    text-align: center;
+    list-style: none;
+}
+#scoreData {
+    margin:auto;
+    width: 50%;
+    padding: 4%;
+    text-align: center;
+}
+button:active {
+    transform: translateY(4px);
+  }
+@media  screen and (max-width: 768px){
+    #introduction {
+        width: 50%;
+    }
+}
+    
+
+@media  screen and (max-width: 425px){
+    #introduction{
+        width: 90%;
+    }
+    #directions {
+        width: 80%;
+    }
+    #radioLabel {
+        padding-left: 30%;
+    }
+    #winner {
+        font-size: 1em;
+    }
+    #timer,#progress {
+        width: 20%;
+    }
+    #scoreData {
+        width: 80%;
+    }
+    #posAns {
+        width: 80%;
+    }
+}
+    
